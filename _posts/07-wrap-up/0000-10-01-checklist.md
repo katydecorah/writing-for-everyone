@@ -16,6 +16,5 @@ class: relax
 1. Explain it *directly*.
 2. *Use* plain language.
 3. *Write* in active voice.
-4. Supplement with *long descriptions*.
-5. Organize content with *lists*, *tables*, and *headlines*.
-6. Get a *peer review*.
+4. Organize content with *lists*, *tables*, and *headlines*.
+5. Get a *peer review*.

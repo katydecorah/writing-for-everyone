@@ -1,0 +1,15 @@
+---
+permalink: "/notes/"
+layout: default
+---
+<div class="limiter prose pad4">
+{% for post in site.posts reversed %}
+<h3>{{post.title}}</h3>
+{% if post.notes %}
+<ul>
+{% for note in post.notes %}
+<li>{{note}}</li>
+{% endfor %}
+</ul>
+{% endif %}
+{% endfor %}

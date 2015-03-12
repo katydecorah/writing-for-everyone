@@ -1,0 +1,150 @@
+$text-color: #312F2F;
+$bg-color: #ecf0f1;
+$instruction-bg: rgba(#000, .1);
+$strong: #C05746; // reddish
+$emphasis: #2980b9;
+
+
+html {
+  background: $bg-color;
+}
+body {
+  font-family: 'Source Sans Pro';
+  letter-spacing: -0.15em;
+  background-size: 100%;
+  color: $text-color;
+  background-color: $bg-color;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+body.relax {
+  letter-spacing: 0;
+}
+body.light {
+  font-weight: normal;
+}
+
+body.go-text {
+  text-indent: -999em;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+em, a {
+  font-style: normal;
+  color: $emphasis;
+}
+
+strong {
+  color: $strong;
+}
+
+strike {
+  color: rgba($text-color, .75);
+}
+
+a {
+  text-decoration: none;
+  background: $text-color;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+div {
+  cursor: pointer;
+  cursor: hand;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 75px;
+  line-height: 1.2;
+  background-size: auto 100%;
+  background-position: center right;
+}
+
+.center {
+  text-align: center;
+}
+
+.image-text {
+  text-shadow: .2em .2em 0 rgba(0, 0, 0, 1);
+}
+
+small {
+  font-size: 30%;
+  color: #8a8acb;
+  letter-spacing: 0;
+}
+
+.table  {
+  position: relative;
+  table {
+    border: 1px solid rgba($text-color, .25);
+    border-collapse: collapse;
+  }
+  th {
+    background: rgba(#fff, 1);
+    text-transform: uppercase;
+    font-size: 60%;
+    text-align: left;
+    padding: .5em .8em;
+  }
+  td {
+    font-size: 80%;
+    padding: .1em .75em;
+    border-bottom: 1px solid rgba($text-color, .25);
+  }
+
+
+  tr:last-child td {
+    border-bottom: none;
+  }
+  tr > td:first-child {
+    border-right: 1px solid rgba($text-color, .25);
+  }
+
+  tr > th:first-child {
+    border-right: 1px solid rgba($text-color, .05);
+  }
+}
+
+.instruction div {
+  padding: 10%;
+  background: $instruction-bg;
+
+}
+.instruction p {
+  line-height: 1.2;
+}
+
+.instruction img {
+  margin-top: 1em;
+}
+
+ol li {
+  margin-bottom: .5em;
+}
+
+
+.tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-transform: uppercase;
+  background: darken($emphasis,20%);
+  color: white;
+  padding: .25em 1em;
+  font-size: 20px;
+}
+
+td .tag {
+  top: -25px;
+  left: 0;
+}

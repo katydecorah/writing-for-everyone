@@ -1,0 +1,8 @@
+---
+layout: default
+---
+{% for post in site.posts reversed %}
+<div{% if post.class %} data-bodyclass='{{post.class}}'{% endif %}{% if post.background %} style='background-image: url({{post.background}})'{% endif %}>
+{{post.content}}
+</div>
+{% endfor %}

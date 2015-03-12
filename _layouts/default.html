@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{site.title}}</title>
+<meta charset='utf-8'>
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+{% if page.url == '/notes/' %}
+<link href='https://www.mapbox.com/base/latest/base.css' rel='stylesheet' />
+{% else %}
+<link href='css/big.css' rel='stylesheet' type='text/css' />
+<script src='js/big.js'></script>
+{% endif %}
+</head>
+<body>
+{{content}}
+</body>
+</html>
